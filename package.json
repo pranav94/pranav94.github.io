@@ -4,6 +4,10 @@
   "description": "Personal github page built using React.",
   "main": "index.js",
   "dependencies": {
+    "antd": "^3.6.4",
+    "babel-plugin-import": "^1.8.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
@@ -17,6 +21,17 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pranav94/pranav94.github.io.git"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": true
+        }
+      ]
+    ]
   },
   "keywords": [
     "Pranav",
