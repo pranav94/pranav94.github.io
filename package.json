@@ -1,0 +1,40 @@
+{
+  "name": "pranav94.github.io",
+  "version": "1.0.0",
+  "description": "Personal github page built using React.",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranav94/pranav94.github.io.git"
+  },
+  "keywords": [
+    "Pranav",
+    "Udupa",
+    "Fullstack",
+    "developer",
+    "Webpage",
+    "React",
+    "Python",
+    "Django",
+    "Flask",
+    "Frontend",
+    "Backend"
+  ],
+  "author": "Pranav Udupa S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranav94/pranav94.github.io/issues"
+  },
+  "homepage": "https://github.com/pranav94/pranav94.github.io#readme"
+}
