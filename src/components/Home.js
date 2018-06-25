@@ -31,7 +31,7 @@ export default class Home extends React.Component {
                                 <div>
                                     <img src="/images/react.svg" alt="React" />
                                     <span>
-                                        <strong>Javascript</strong>
+                                        <strong>React</strong>
                                         <p>I love Redux and the reactive way of doing things. Almost always choose React as my front-end of the stack.</p>
                                     </span>
                                 </div>
@@ -60,7 +60,7 @@ export default class Home extends React.Component {
                             </div>
                             <div className="stack-description">
                                 <h1>
-                                    JAVASCRIPT
+                                    React
                             </h1>
                                 <p>
                                     I love everything about React. My hands-on experience extends over Redux, Ant Design, CSS and HTML as I build numerous components/webtools using React + Redux.
