@@ -1,11 +1,301 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 body {
-  font-family: 'Montserrat';
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+}
+
+footer {
+  margin-top: 32px;
+}
+
+a, a:visited, a:hover, a:focus, a:active {
+  color: #262626;
+}
+
+.links a, .links a:visited, .links a:hover, .links a:focus, .links a:active {
+  color: white!important;
+  text-decoration: none!important;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  height: auto;
+  align-self: center;
+  margin: 0 50px;
+}
+
+.title {
+  z-index: -1;
+  height: 160px;
+  width: 100%;
+  background-image: url('/images/hope.jpg');
+  background-size: cover;
+}
+
+.title>img {
+  position: absolute;
+  margin: 32px;
+}
+
+.navbar {
+  position: absolute;
+  color: white;
+  height: 80px;
+  width: 100%;
+  padding-top: 16px;
+  padding-right: 48px;
+  text-align: right;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.links:hover>span {
+  color: grey;
+  transition: color .5s;
+}
+
+.links:hover>span:hover {
+  color: white;
+  transition: color .5s;
+}
+
+.links>span {
+  padding: 16px;
+  cursor: pointer;
+  transition: color .5s;
+}
+
+.intro {
+  padding-top: 24px;
+}
+
+.intro>h1 {
+  color: white;
+  margin-left: 160px;
+}
+
+.intro>h1:nth-child(1) {
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.intro>h1:nth-child(2) {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.photo {
+  border-radius: 50%;
+  margin-left: 480px;
+  margin-top: -45px;
+  position: absolute;
+  right: 32px;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 32px;
+  }
+}
+
+@keyframes slideInFromRightMargin {
+  0% {
+    margin-left: 32px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stackCardsEntry {
+  0% {
+    opacity: 0;
+    transform: rotateY(-35deg) rotateX(15deg) translateY(20%) translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(-35deg) rotateX(15deg) translateY(0) translateX(0);
+  }
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .intro {
+    display: none;
+  }
+  .title>img {
+    position: absolute;
+    margin: 8px;
+    height: 8vh;
+  }
+  .title {
+    height: 80px;
+    overflow: hidden;
+  }
+  .navbar {
+    margin-top: 12px;
+    padding-right: 8px;
+  }
+  .links>span {
+    padding: 8px;
+  }
+}
+
+.home {
+  text-align: center;
+  margin: 16px;
+  margin-top: 32px;
+}
+
+.home>h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.home>p {
+  font-size: 16px;
+}
+
+.stack {
+  margin-top: 32px;
+}
+
+.skills {
+  perspective: 1000px;
+}
+
+.skills img {
+  width: 80px;
+}
+
+.skills>div {
+  display: grid;
+  grid-template-columns: 40% auto;
+  width: 32vw;
+  transform: rotateY(-35deg) rotateX(15deg);
+  position: absolute;
+  border-bottom: 4px solid rgba(0, 0, 0, .2);
+  padding: 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  mix-blend-mode: darken;
+  transition: transform .1s ease-out;
+  text-align: start;
+  animation: 1s ease-out 0s 1 stackCardsEntry;
+}
+
+.skills>div>span>strong {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.skills>div:nth-child(1) {
+  height: 200px;
+  color: white;
+  top: 0px;
+  z-index: 2;
+  background: #52c1df;
+}
+
+.skills>div:nth-child(2) {
+  color: #3770a2;
+  top: 180px;
+  z-index: 1;
+  background: #DCC6E0;
+}
+
+.skills>div:nth-child(3) {
+  color: #04576d;
+  top: 340px;
+  background: #C8F6C5;
+}
+
+.skills>div:hover {
+  transform: rotateY(-15deg) rotateX(7deg) scale(1.03);
+  transition: transform .2s ease-out;
+  z-index: 3;
+  mix-blend-mode: normal;
+}
+
+.stack-border {
+  border: 1px solid black;
+  border-left: none;
+  height: 620px;
+  width: 23px
+}
+
+.stack-arrow {
+  border: .5px solid black;
+  width: 32px;
+  margin-left: 24px;
+  position: absolute;
+  top: 310px;
+}
+
+.stack-description {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  left: 64px;
+  text-align: start;
+}
+
+.stack-description>h1 {
+  animation: 1s ease-out 0s 1 slideInFromRightMargin;
+}
+
+.stack-description>p {
+  animation: 1s ease-out 0s 1 opacityAnimation;
+}
+
+.stack-short-note {
+  margin-top: 64px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.anticon-heart {
+  color: #e74c3c;
 }

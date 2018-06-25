@@ -1,32 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 import 'antd/dist/antd.less'
 import './index.less'
-import './App.css'
-import logo from './logo.svg'
+import './index.css'
+
+import Header from './components/Header'
+import Home from './components/Home'
 
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div>
-        <div className='title'>
-          <img height='80' src={logo} alt='P.U' />
-          <div className='navbar'>
-            <span className='links'>
-              <span>Home</span>
-              <span>Skills</span>
-              <span>Contact</span>
-            </span>
-          </div>
-          <div className="intro">
-            <h1>
-              HI.
-          </h1>
-            <h1>
-              WELCOME TO MY PAGE
-          </h1>
-          </div>
-        </div>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/roster' component={Home} />
+          <Route path='/schedule' component={Home} />
+        </Switch>
       </div>
     )
   }
