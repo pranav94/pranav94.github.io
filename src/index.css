@@ -89,6 +89,12 @@ a, a:visited, a:hover, a:focus, a:active {
   position: absolute;
   right: 32px;
   animation: 1s ease-out 0s 1 slideInFromRight;
+  transition: .1s height ease-out;
+}
+
+.photo:hover {
+  height: 100px;
+  transition: .1s height ease-out;
 }
 
 @keyframes slideInFromLeft {
@@ -241,7 +247,7 @@ a, a:visited, a:hover, a:focus, a:active {
 .stack-border {
   border: 1px solid black;
   border-left: none;
-  height: 620px;
+  height: 618px;
   width: 23px
 }
 
@@ -261,11 +267,15 @@ a, a:visited, a:hover, a:focus, a:active {
   text-align: start;
 }
 
-.stack-description>h1 {
+.stack-description>div {
+  height: 206px;
+}
+
+.stack-description>div>h1 {
   animation: 1s ease-out 0s 1 slideInFromRightMargin;
 }
 
-.stack-description>p {
+.stack-description>div>p {
   animation: 1s ease-out 0s 1 opacityAnimation;
 }
 
@@ -276,6 +286,15 @@ a, a:visited, a:hover, a:focus, a:active {
 
 .anticon-heart {
   color: #e74c3c;
+  transition: .2s font-size ease-out;
+}
+.anticon-heart:hover {
+  font-size: 110%;
+  transition: .2s font-size ease-out;
+}
+
+.mobilemenu, .sidebar {
+  display: none;
 }
 
 @media only screen and (max-width: 1026px) {
@@ -303,9 +322,9 @@ a, a:visited, a:hover, a:focus, a:active {
   }
   .photo {
     height: 6vh;
-    top: 7vh;
+    top: 56px;
   }
-  .stack-short-note-div, .skills>div>span, .stack-arrow  {
+  .stack-short-note-div, .skills>div>span, .stack-arrow, .title>img  {
     display: none!important;
   }
   .skills>div {
@@ -329,11 +348,48 @@ a, a:visited, a:hover, a:focus, a:active {
   .stack-border {
     margin-left: -24px;
   }
-  .stack-description>p {
+  .stack-description>div>p {
     font-size: 1.3vh!important;
     width: 60vw;
   }
   footer {
     margin-top: 80px;
+  }
+  .mobilemenu {
+    display: block!important;
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 24px;
+    z-index: 5;
+  }
+  .mobilemenu>button, .mobilemenu>button:active, .mobilemenu>button:focus, .mobilemenu>button:hover {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    transition: all 0.1s linear;
+  }
+  .sidebar {
+    position: absolute;
+    display: block;
+    background: black;
+    height: 500vh;
+    padding: 2vw;
+    z-index: 3;
+    width: 30vw;
+  }
+  .open {
+    margin-left: 0;
+    transition: all 0.1s linear;
+  }
+  .close {
+    margin-left: -30vw;
+    transition: all 0.1s linear;
+  }
+  .sidebar>div {
+    padding-top: 32px;
+    margin-left: 16px;
+
+  }
+  .sidebar>div>a {
+    color: white;
   }
 }

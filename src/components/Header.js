@@ -1,13 +1,45 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Icon, Button } from 'antd'
 
 import logo from '../logo.svg'
 
 
 export default class Header extends React.Component {
+    state = {
+        collapsed: false,
+    }
+    toggleCollapsed = () => {
+        this.setState({
+            collapsed: !this.state.collapsed,
+        })
+    }
     render() {
         return (
             <div>
+                <div className={'sidebar '+(this.state.collapsed ? 'open' : 'close')}>
+                    <img height='60' src={logo} alt='P.U' />
+                    <div>
+                        <Link onClick={this.toggleCollapsed} to='/'>
+                            HOME
+                        </Link>
+                    </div>
+                    <div>
+                        <Link onClick={this.toggleCollapsed} to='/skills'>
+                            SKILLS
+                        </Link>
+                    </div>
+                    <div>
+                        <Link onClick={this.toggleCollapsed} to='/skills'>
+                            CONTACT
+                        </Link>
+                    </div>
+                </div>
+                <div className="mobilemenu">
+                    <Button type="primary" style={{marginLeft: this.state.collapsed ? '32vw' : 0}} onClick={this.toggleCollapsed}>
+                        <Icon type={this.state.collapsed ? 'menu-fold' : 'menu-unfold'} />
+                    </Button>
+                </div>
                 <div className='title'>
                     <img height='80' src={logo} alt='P.U' />
                     <div className='navbar'>

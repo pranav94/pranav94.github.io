@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                                     <img src="/images/react.svg" alt="React" />
                                     <span>
                                         <strong>REACT</strong>
-                                        <p>I love Redux and the reactive way of doing things. Almost always choose React as my front-end of the stack.</p>
+                                        <p>I love Redux and the reactive way of doing things.</p>
                                     </span>
                                 </div>
                                 <div>
@@ -59,32 +59,32 @@ export default class Home extends React.Component {
                                 <div className="stack-arrow"></div>
                             </div>
                             <div className="stack-description">
-                                <h1>
-                                    React
-                            </h1>
-                                <p>
-                                    I love everything about React. My hands-on experience extends over Redux, Ant Design, CSS and HTML as I build numerous components/webtools using React + Redux.
-                                    I use npm for dependency management and webpack as a bundler.
-                            </p>
-                                <br />
-                                <br />
-                                <h1>
-                                    Python
-                            </h1>
-                                <p>
-                                    I'm always excited to code in Python. The ease, scalability and extensibility of the interpreted language impresses me.
-                                    Working with Flask, Flask Restplus, SqlAlchemy, Django, Django Rest Framework and TastyPie I've developed an affinity towards doing things in a Pythonic way.
-                                Can get overly obsessive about the <strong>PEP-8</strong> coding standards.
-                            </p>
-                                <br />
-                                <h1>
-                                    SQL
-                            </h1>
-                                <p>
-                                    I like to use ORMs everytime I need to connect to a database. Comfortable with SqlAlchemy and Django's models.
-                                    I've connected to different sorts of underlying databases including MySQL, MariaDB, OracleDB and Postgres.
-                                    Also have some experience with the no sql database MongoDB.
-                            </p>
+                                <div>
+                                    <h1>
+                                        React
+                                    </h1>
+                                    <p>
+                                        I love everything about React. My hands-on experience extends over Redux, Ant Design, CSS, HTML, jQuery, webpack and node.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h1>
+                                        Python
+                                    </h1>
+                                    <p>
+                                        Working with Flask, Flask Restplus, SqlAlchemy, Django, Django Rest Framework and TastyPie I've developed an affinity towards doing things in a Pythonic way.
+                                        Can get overly obsessive about the <strong>PEP-8</strong> coding standards.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h1>
+                                        SQL
+                                    </h1>
+                                    <p>
+                                        I like to use ORMs everytime I need to connect to a database.
+                                        I've connected to different sorts of underlying databases including MySQL, MariaDB, OracleDB, Postgres, SQLite and MongoDB.
+                                    </p>
+                                </div>
                             </div>
                         </Col>
                     </Row>
