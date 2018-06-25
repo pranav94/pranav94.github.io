@@ -31,14 +31,14 @@ export default class Home extends React.Component {
                                 <div>
                                     <img src="/images/react.svg" alt="React" />
                                     <span>
-                                        <strong>React</strong>
+                                        <strong>REACT</strong>
                                         <p>I love Redux and the reactive way of doing things. Almost always choose React as my front-end of the stack.</p>
                                     </span>
                                 </div>
                                 <div>
                                     <img src="/images/python.svg" alt="Python" />
                                     <span>
-                                        <strong>Python</strong>
+                                        <strong>PYTHON</strong>
                                         <p>
                                             My go-to language when I write back-ends.
                                     </p>
@@ -69,7 +69,7 @@ export default class Home extends React.Component {
                                 <br />
                                 <br />
                                 <h1>
-                                    PYTHON
+                                    Python
                             </h1>
                                 <p>
                                     I'm always excited to code in Python. The ease, scalability and extensibility of the interpreted language impresses me.
