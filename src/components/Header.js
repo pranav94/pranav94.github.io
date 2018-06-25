@@ -17,7 +17,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <div>
-                <div className={'sidebar '+(this.state.collapsed ? 'open' : 'close')}>
+                <div className={'sidebar ' + (this.state.collapsed ? 'open' : 'close')}>
                     <img height='60' src={logo} alt='P.U' />
                     <div>
                         <Link onClick={this.toggleCollapsed} to='/'>
@@ -36,7 +36,7 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div className="mobilemenu">
-                    <Button type="primary" style={{marginLeft: this.state.collapsed ? '32vw' : 0}} onClick={this.toggleCollapsed}>
+                    <Button type="primary" style={{ marginLeft: this.state.collapsed ? '32vw' : 0 }} onClick={this.toggleCollapsed}>
                         <Icon type={this.state.collapsed ? 'menu-fold' : 'menu-unfold'} />
                     </Button>
                 </div>

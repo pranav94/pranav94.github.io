@@ -13,7 +13,7 @@ a, a:visited, a:hover, a:focus, a:active {
 }
 
 .links a, .links a:visited, .links a:hover, .links a:focus, .links a:active {
-  color: white!important;
+  color: white;
   text-decoration: none!important;
 }
 
@@ -49,12 +49,12 @@ a, a:visited, a:hover, a:focus, a:active {
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
-.links:hover>span {
+.links:hover>span>a {
   color: grey;
   transition: color .5s;
 }
 
-.links:hover>span:hover {
+.links:hover>span:hover>a {
   color: white;
   transition: color .5s;
 }
