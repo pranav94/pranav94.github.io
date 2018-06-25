@@ -15,7 +15,7 @@ export default class Home extends React.Component {
                 </p>
                 <div className="stack">
                     <Row>
-                        <Col span={4}>
+                        <Col className="stack-short-note-div" span={4}>
                             <div className="stack-short-note">
                                 <h1>React</h1>
                                 <h1>+</h1>

@@ -162,28 +162,6 @@ a, a:visited, a:hover, a:focus, a:active {
   }
 }
 
-@media only screen and (max-width: 1026px) {
-  .intro {
-    display: none;
-  }
-  .title>img {
-    position: absolute;
-    margin: 8px;
-    height: 8vh;
-  }
-  .title {
-    height: 80px;
-    overflow: hidden;
-  }
-  .navbar {
-    margin-top: 12px;
-    padding-right: 8px;
-  }
-  .links>span {
-    padding: 8px;
-  }
-}
-
 .home {
   text-align: center;
   margin: 16px;
@@ -298,4 +276,64 @@ a, a:visited, a:hover, a:focus, a:active {
 
 .anticon-heart {
   color: #e74c3c;
+}
+
+@media only screen and (max-width: 1026px) {
+  .intro {
+    display: none;
+  }
+  .home-head {
+    font-size: 6vw!important;
+  }
+  .title>img {
+    position: absolute;
+    margin: 8px;
+    height: 8vh;
+  }
+  .title {
+    height: 80px;
+    overflow: hidden;
+  }
+  .navbar {
+    margin-top: 12px;
+    padding-right: 8px;
+  }
+  .links {
+    display: none;
+  }
+  .photo {
+    height: 6vh;
+    top: 7vh;
+  }
+  .stack-short-note-div, .skills>div>span, .stack-arrow  {
+    display: none!important;
+  }
+  .skills>div {
+    display: grid;
+    grid-template-columns: 100% auto;
+    transform: rotateY(0) rotateX(0);
+    position: relative;
+    border-bottom: 4px solid rgba(0, 0, 0, .2);
+    padding: 1vw;
+    border-radius: 1vh;
+    transition: transform .1s ease-out;
+    text-align: start;
+    width: fit-content!important;
+    height: initial!important;
+    animation: none;
+  }
+  .stack-description {
+    font-weight: 800;
+    left: 24px;
+  }
+  .stack-border {
+    margin-left: -24px;
+  }
+  .stack-description>p {
+    font-size: 1.3vh!important;
+    width: 60vw;
+  }
+  footer {
+    margin-top: 80px;
+  }
 }
