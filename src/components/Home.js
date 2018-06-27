@@ -89,9 +89,6 @@ export default class Home extends React.Component {
                         </Col>
                     </Row>
                 </div>
-                <footer>
-                    <Link to='/'> Pranav </Link> © 2018.
-                </footer>
             </div >
         )
     }

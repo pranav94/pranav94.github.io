@@ -5,7 +5,10 @@ body {
 }
 
 footer {
+  position: fixed;
   margin-top: 32px;
+  left: 10px;
+  bottom: 10px;
 }
 
 a, a:visited, a:hover, a:focus, a:active {
@@ -392,4 +395,23 @@ a, a:visited, a:hover, a:focus, a:active {
   .sidebar>div>a {
     color: white;
   }
+}
+
+.worksTransition-appear{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.worksTransition-appear.worksTransition-appear-active{
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all .4s ease-in-out;
+}
+
+.experience, .contact {
+  margin: 32px;
+}
+
+.experience .ant-timeline-item-content, .contact {
+  animation: 1s ease-out 0s 1 slideInFromTop;
 }

@@ -30,7 +30,7 @@ export default class Header extends React.Component {
                         </Link>
                     </div>
                     <div>
-                        <Link onClick={this.toggleCollapsed} to='/skills'>
+                        <Link onClick={this.toggleCollapsed} to='/contact'>
                             CONTACT
                         </Link>
                     </div>
@@ -55,7 +55,7 @@ export default class Header extends React.Component {
                                 </Link>
                             </span>
                             <span>
-                                <Link to='/skills'>
+                                <Link to='/contact'>
                                     CONTACT
                                 </Link>
                             </span>
