@@ -354,6 +354,7 @@ footer {
   position: relative;
   width: 100%;
   border-radius: 8px;
+  background-position: right;
 }
 .combined {
   color: #fff;
