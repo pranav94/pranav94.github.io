@@ -41,7 +41,7 @@ a, a:visited, a:hover, a:focus, a:active {
   z-index: -1;
   height: 120px;
   border-radius: 8px;
-  background-image: url('/images/hope.jpg');
+  background-image: url('/images/header.jpg');
   background-size: cover;
 }
 
@@ -352,7 +352,7 @@ footer {
 
 .combined-wrapper {
   padding: 0;
-  background: url('/images/hope.jpg');
+  background: url('/images/header.jpg');
   height: 148px;
   position: relative;
   width: 100%;
