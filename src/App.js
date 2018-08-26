@@ -9,7 +9,7 @@ import { Icon } from 'antd'
 
 import Header from './components/Header'
 import Home from './components/Home'
-import Skills from './components/Skills'
+import Experience from './components/Experience'
 import Contact from './components/Contact'
 
 
@@ -20,7 +20,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/skills' component={Skills} />
+          <Route path='/experience' component={Experience} />
           <Route path='/contact' component={Contact} />
         </Switch>
         <footer>

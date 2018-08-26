@@ -18,25 +18,27 @@ export default class Header extends React.Component {
         return (
             <div>
                 <div className={'sidebar ' + (this.state.collapsed ? 'open' : 'close')}>
-                    <img height='60' src={logo} alt='P.U' />
+                    <Link to='/'>
+                        <img height='60' src={logo} alt='P.U' />
+                    </Link>
                     <div>
                         <Link onClick={this.toggleCollapsed} to='/'>
-                            HOME
+                            Home
                         </Link>
                     </div>
                     <div>
-                        <Link onClick={this.toggleCollapsed} to='/skills'>
-                            SKILLS
+                        <Link onClick={this.toggleCollapsed} to='/experience'>
+                            Experience
                         </Link>
                     </div>
                     <div>
                         <Link onClick={this.toggleCollapsed} to='/contact'>
-                            CONTACT
+                            Contact
                         </Link>
                     </div>
                 </div>
-                <div className="mobilemenu">
-                    <Button type="primary" style={{ marginLeft: this.state.collapsed ? '32vw' : 0 }} onClick={this.toggleCollapsed}>
+                <div className='mobilemenu'>
+                    <Button type='primary' style={{ marginLeft: this.state.collapsed ? '32vw' : 0 }} onClick={this.toggleCollapsed}>
                         <Icon type={this.state.collapsed ? 'menu-fold' : 'menu-unfold'} />
                     </Button>
                 </div>
@@ -46,27 +48,24 @@ export default class Header extends React.Component {
                         <span className='links'>
                             <span>
                                 <Link to='/'>
-                                    HOME
+                                    Home
                                 </Link>
                             </span>
                             <span>
-                                <Link to='/skills'>
-                                    SKILLS
+                                <Link to='/experience'>
+                                    Experience
                                 </Link>
                             </span>
                             <span>
                                 <Link to='/contact'>
-                                    CONTACT
+                                    Contact
                                 </Link>
                             </span>
                         </span>
                     </div>
-                    <div className="intro">
+                    <div className='intro'>
                         <h1>
-                            HI.
-                        </h1>
-                        <h1>
-                            WELCOME TO MY PAGE
+                            Pranav Udupa
                         </h1>
                     </div>
                 </div>

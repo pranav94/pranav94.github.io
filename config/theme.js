@@ -1,3 +1,3 @@
 module.exports = {
-    'font-family': 'Montserrat',
+    'font-family': 'Open Sans',
 }
