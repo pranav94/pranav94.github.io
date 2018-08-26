@@ -474,7 +474,7 @@ footer {
   .stack-border {
     margin-left: -24px;
   }
-  .stack-description>div>p {
+  .stack-description>div {
     font-size: 1.3vh!important;
     width: 60vw;
   }

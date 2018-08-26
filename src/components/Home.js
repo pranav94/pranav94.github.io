@@ -69,51 +69,46 @@ export default class Home extends React.Component {
                                     <h1>
                                         Python
                                     </h1>
-                                    <p>
-                                        Working with
+                                    Working with
                                         {' '}
-                                        <Tag>Flask</Tag>
-                                        <Tag>Flask Restplus</Tag>
-                                        <Tag>SqlAlchemy</Tag>
-                                        <Tag>Django</Tag>
-                                        <Tag>Django Rest Framework</Tag>
-                                        {' and '}
-                                        <Tag> TastyPie</Tag>has developed an affinity towards doing things in a Pythonic way.
+                                    <Tag>Flask</Tag>
+                                    <Tag>Flask Restplus</Tag>
+                                    <Tag>SqlAlchemy</Tag>
+                                    <Tag>Django</Tag>
+                                    <Tag>Django Rest Framework</Tag>
+                                    {' and '}
+                                    <Tag> TastyPie</Tag>
+                                    has developed an affinity towards doing things in a Pythonic way.
                                         Can get overly obsessive about the <strong>PEP-8</strong> and <strong>TDD</strong>.
-                                    </p>
                                 </div>
                                 <div>
                                     <h1>
                                         React
                                     </h1>
-                                    <p>
-                                        Loves everything about React. Hands-on experience extends over
+                                    Loves everything about React. Hands-on experience extends over
                                         {' '}
-                                        <Tag>Redux</Tag>
-                                        <Tag>Flask</Tag>
-                                        <Tag>Ant Design</Tag>
-                                        <Tag>HTML/CSS</Tag>
-                                        <Tag>jQuery</Tag>
-                                        <Tag>webpack</Tag>
-                                        {' and '}
-                                        <Tag>node</Tag>
-                                    </p>
+                                    <Tag>Redux</Tag>
+                                    <Tag>Flask</Tag>
+                                    <Tag>Ant Design</Tag>
+                                    <Tag>HTML/CSS</Tag>
+                                    <Tag>jQuery</Tag>
+                                    <Tag>webpack</Tag>
+                                    {' and '}
+                                    <Tag>node</Tag>
                                 </div>
                                 <div>
                                     <h1>
                                         SQL
                                     </h1>
-                                    <p>
-                                        Has used <strong>ORM</strong>s to connect to a myriad databases including
+                                    Has used <strong>ORM</strong>s to connect to a myriad databases including
                                         {' '}
-                                        <Tag>MySQL</Tag>
-                                        <Tag>MariaDB</Tag>
-                                        <Tag>OracleDB</Tag>
-                                        <Tag>Postgres</Tag>
-                                        <Tag>SQLite</Tag>
-                                        {' and '}
-                                        <Tag>MongoDB</Tag>
-                                    </p>
+                                    <Tag>MySQL</Tag>
+                                    <Tag>MariaDB</Tag>
+                                    <Tag>OracleDB</Tag>
+                                    <Tag>Postgres</Tag>
+                                    <Tag>SQLite</Tag>
+                                    {' and '}
+                                    <Tag>MongoDB</Tag>
                                 </div>
                             </div>
                         </Col>
