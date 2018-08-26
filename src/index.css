@@ -284,15 +284,12 @@ a, a:visited, a:hover, a:focus, a:active {
 
 .stack-description>div {
   height: 220px;
+  animation: 1s ease-out 0s 1 opacityAnimation;
+  line-height: 2;
 }
 
 .stack-description>div>h1 {
   animation: 1s ease-out 0s 1 slideInFromRightMargin;
-}
-
-.stack-description>div>p {
-  animation: 1s ease-out 0s 1 opacityAnimation;
-  line-height: 2;
 }
 
 .stack-short-note {
