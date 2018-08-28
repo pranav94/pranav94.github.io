@@ -9,21 +9,19 @@ export default class Contact extends React.Component {
                 <h2>
                     Like what you see? Write to me!
                 </h2>
-                <div>
-                    <Icon type='mail' />
-                    <h4>
-                        {'  '}
-                        <a style={{ color: 'blue' }} href='mailto:pranavudupa94@gmail.com'>
-                            pranavudupa94@gmail.com
-                        </a>
-                    </h4>
+                <div className='LI-profile-badge' data-version='v1' data-size='large' data-locale='en_US' data-type='horizontal' data-theme='light' data-vanity='pranavudupa'>
+                    <a className='LI-simple-link' href='https://in.linkedin.com/in/pranavudupa?trk=profile-badge'>
+                        <Icon type='linkedin' />
+                        {' '}
+                        Pranav Udupa
+                    </a>
                 </div>
                 <div>
-                    <Icon type='linkedin' />
                     <h4>
-                        {'  '}
-                        <a style={{ color: 'blue' }} href='https://www.linkedin.com/in/pranavudupa/'>
-                            https://www.linkedin.com/in/pranavudupa/
+                        <a className='mail' href='mailto:pranavudupa94@gmail.com'>
+                            <Icon type='mail' />
+                            {' '}
+                            pranavudupa94@gmail.com
                         </a>
                     </h4>
                 </div>

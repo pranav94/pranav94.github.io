@@ -517,3 +517,15 @@ footer {
     color: white;
   }
 }
+
+.mail {
+  color: inherit;
+}
+
+.mail:hover {
+  color: #e74c3c;
+}
+
+.LI-badge-container {
+  text-align: initial;
+}
