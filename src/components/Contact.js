@@ -1,8 +1,15 @@
 import React from 'react'
 import { Icon } from 'antd'
+import linkedIn from './LinkedIn'
 
 
 export default class Contact extends React.Component {
+    /**
+     * Load linkedIn badge.
+     */
+    componentDidMount() {
+        linkedIn(window)
+    }
     render() {
         return (
             <div className='contact'>
